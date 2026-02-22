@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.conteiner {
+    display: grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-template-rows: auto 3fr 1fr 1px;
+    grid-template-areas: 
+        "a a a"
+        "b1 b2 b3"
+        "c c c"
+    ;
+    gap: 5px;
+    height: 100vh;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    padding: 10px;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b1 {
+    grid-area: b1;
+}
+
+.b2 {
+    grid-area: b2;
+}
+
+.b3 {
+    grid-area: b3;
+}
+
+.c {
+    grid-area: c;
+}
